@@ -3,7 +3,7 @@ This repository contains (or should contain) stuff for installing and configurin
 
 ## Laptop configuration
 
-|Device|Model|
+| Name | Description |
 | - | - |
 | Manufacturer | Toshiba |
 | Model | Satellite L855-14D |
