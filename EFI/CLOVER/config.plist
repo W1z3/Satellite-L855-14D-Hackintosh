@@ -240,7 +240,7 @@
 			<key>HighCurrent</key>
 			<false/>
 			<key>Inject</key>
-			<false/>
+			<true/>
 		</dict>
 		<key>UseIntelHDMI</key>
 		<false/>
