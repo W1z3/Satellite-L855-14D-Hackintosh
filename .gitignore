@@ -1,0 +1,16 @@
+.*
+
+EFI/APPLE
+EFI/BOOT/fbx64.efi
+EFI/BOOT/mmx64.efi
+EFI/CLOVER/doc
+EFI/CLOVER/themes/christmas
+EFI/CLOVER/themes/newyear
+EFI/Microsoft
+EFI/ubuntu
+
+boot
+
+!/.gitignore
+!/EFI/BOOT
+!/EFI/CLOVER/themes/._clover-theme-minimal-dark
