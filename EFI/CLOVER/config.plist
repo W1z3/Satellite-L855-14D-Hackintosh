@@ -155,14 +155,10 @@
 	</dict>
 	<key>Boot</key>
 	<dict>
-		<key>#LegacyBiosDefaultEntry</key>
-		<integer>0</integer>
 		<key>Arguments</key>
 		<string>slide=0 alcid=76</string>
 		<key>DefaultVolume</key>
 		<string>LastBootedVolume</string>
-		<key>DisableCloverHotkeys</key>
-		<false/>
 		<key>Fast</key>
 		<false/>
 		<key>NeverDoRecovery</key>
@@ -247,126 +243,18 @@
 	</dict>
 	<key>GUI</key>
 	<dict>
-		<key>#Custom</key>
-		<dict>
-			<key>Entries</key>
-			<array>
-				<dict>
-					<key>AddArguments</key>
-					<string>-v</string>
-					<key>Arguments</key>
-					<string>Kernel=mach_kernel</string>
-					<key>Disabled</key>
-					<true/>
-					<key>Hidden</key>
-					<false/>
-					<key>Hotkey</key>
-					<string>M</string>
-					<key>InjectKexts</key>
-					<false/>
-					<key>NoCaches</key>
-					<false/>
-					<key>Path</key>
-					<string>\EFI\BOOT\BOOTX64.efi</string>
-					<key>Title</key>
-					<string>MyCustomEntry</string>
-					<key>Type</key>
-					<string>OSXRecovery</string>
-					<key>Volume</key>
-					<string>D68F1885-571C-4441-8DD5-F14803EFEF54</string>
-				</dict>
-				<dict>
-					<key>Hidden</key>
-					<false/>
-					<key>InjectKexts</key>
-					<false/>
-					<key>NoCaches</key>
-					<false/>
-					<key>SubEntries</key>
-					<array>
-						<dict>
-							<key>AddArguments</key>
-							<string>-v</string>
-							<key>Title</key>
-							<string>Boot OS X 10.8.5 (12F36) Mountain Lion in Verbose Mode</string>
-						</dict>
-					</array>
-					<key>Title</key>
-					<string>OS X 10.8.5 (12F36) Mountain Lion</string>
-					<key>Type</key>
-					<string>OSX</string>
-					<key>Volume</key>
-					<string>454794AC-760D-46E8-8F77-D6EB23D2FD32</string>
-				</dict>
-			</array>
-			<key>Legacy</key>
-			<array>
-				<dict>
-					<key>Disabled</key>
-					<true/>
-					<key>Hidden</key>
-					<false/>
-					<key>Hotkey</key>
-					<string>L</string>
-					<key>Title</key>
-					<string>MyLegacyEntry</string>
-					<key>Type</key>
-					<string>Windows</string>
-					<key>Volume</key>
-					<string>89433CD3-21F2-4D3C-95FC-722C48066D3A</string>
-				</dict>
-			</array>
-			<key>Tool</key>
-			<array>
-				<dict>
-					<key>Arguments</key>
-					<string>-b</string>
-					<key>Disabled</key>
-					<false/>
-					<key>Hidden</key>
-					<false/>
-					<key>Hotkey</key>
-					<string>S</string>
-					<key>Path</key>
-					<string>\EFI\CLOVER\TOOLS\Shell64-v1.efi</string>
-					<key>Title</key>
-					<string>MyCustomShell</string>
-					<key>Volume</key>
-					<string>D68F1885-571C-4441-8DD5-F14803EFEF54</string>
-				</dict>
-			</array>
-		</dict>
-		<key>#CustomIcons</key>
+		<key>CustomIcons</key>
 		<false/>
-		<key>#Hide</key>
+		<key>Hide</key>
 		<array>
-			<string>Windows</string>
-			<string>BOOTX64.EFI</string>
+			<string>Recovery</string>
+			<string>Legacy</string>
 		</array>
-		<key>#KbdPrevLang</key>
-		<false/>
-		<key>#Language</key>
-		<string>ru:0</string>
-		<key>#Mouse</key>
+		<key>Scan</key>
 		<dict>
-			<key>Enabled</key>
-			<true/>
-			<key>Mirror</key>
-			<false/>
-			<key>Speed</key>
-			<integer>2</integer>
-		</dict>
-		<key>#Scan</key>
-		<dict>
-			<key>Entries</key>
-			<true/>
 			<key>Legacy</key>
-			<false/>
-			<key>Tool</key>
-			<true/>
+			<string>No</string>
 		</dict>
-		<key>#TextOnly</key>
-		<false/>
 		<key>Theme</key>
 		<string>clover-theme-minimal-dark</string>
 		<key>Timezone</key>
@@ -533,54 +421,12 @@
 		<key>CsrActiveConfig</key>
 		<string>0x67</string>
 		<key>MLB</key>
-		<string>C02032109R5DC771H</string>
+		<string>C02226200CDF3271F</string>
 		<key>ROM</key>
 		<string>UseMacAddr0</string>
 	</dict>
 	<key>SMBIOS</key>
 	<dict>
-		<key>#Memory</key>
-		<dict>
-			<key>Channels</key>
-			<integer>2</integer>
-			<key>Modules</key>
-			<array>
-				<dict>
-					<key>Frequency</key>
-					<integer>1333</integer>
-					<key>Part</key>
-					<string>C0001403</string>
-					<key>Serial</key>
-					<string>00001001</string>
-					<key>Size</key>
-					<integer>4096</integer>
-					<key>Slot</key>
-					<integer>0</integer>
-					<key>Type</key>
-					<string>DDR3</string>
-					<key>Vendor</key>
-					<string>Kingston</string>
-				</dict>
-				<dict>
-					<key>Frequency</key>
-					<integer>1333</integer>
-					<key>Part</key>
-					<string>C0001404</string>
-					<key>Serial</key>
-					<string>00001002</string>
-					<key>Size</key>
-					<integer>4096</integer>
-					<key>Slot</key>
-					<integer>2</integer>
-					<key>Type</key>
-					<string>DDR3</string>
-					<key>Vendor</key>
-					<string>Kingston</string>
-				</dict>
-			</array>
-			<key>SlotCount</key>
-			<integer>4</integer>
-		</dict>
 		<key>#Slots</key>
 		<array>
 			<dict>
@@ -604,8 +450,6 @@
 				<integer>1</integer>
 			</dict>
 		</array>
-		<key>#Trust</key>
-		<true/>
 		<key>BiosReleaseDate</key>
 		<string>07/24/2019</string>
 		<key>BiosVendor</key>
@@ -650,6 +494,8 @@
 		<string>C02HX6Z8F1G4</string>
 		<key>SmUUID</key>
 		<string>7B31AD7F-2EF9-4287-A39D-6D355A6A14B0</string>
+		<key>Trust</key>
+		<false/>
 		<key>Version</key>
 		<string>1.0</string>
 	</dict>
